@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica   , sans-serif;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.forgot-password {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    color: #353434;
+    margin-left: 215px;
+    text-decoration: none;
+    display: block; /* Convert the link to a block element */
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+.navigation {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 87px;
+    background-color: #FFFFFF; /* Example color */
+    padding: 0 20px; /* Add some padding for spacing */
+    box-shadow: 0px 4px 24.3px 0px #0000001A;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height:800px;
+}
+
+.left-col, .right-col {
+    width: 100%;
+    height: 860px;
+}
+
+.left-col {
+    max-width: 100%;
+    background-image: url("../jnjwebapp/assets/client/bg_login.png");
+    height: 100%; 
+    background-size: 100%;
+    background-position:top;
+
+}
+
+.right-col.container {
+    background-color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content {
+    margin-top: 25%;
+    margin-left: 30%;
+    width: 27%;
+    height: 47px;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: right;
+    color:  #353434; /* Text color */
+    z-index: 0; 
+}
+
+.login-form {
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 368px;
+    height: 70px;
+    gap: 0px;
+}
+
+.login-form input[type="email"] {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 10px; /* Add padding to improve input field appearance */
+    border: 0px; /* Remove default input field border */
+    border-bottom: 1px solid #000000; /* Add bottom border */
+    opacity: 1; /* Set opacity to make input field visible */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000; /* Set text color */
+    background-color: transparent; /* Make input background transparent */
+}
+
+.login-form input[type="password"] {
+    margin-top: 20px;
+    width: 368px;
+    height: 49px;
+    gap: 0px;
+    border: 0px;
+    border-bottom: 1px solid #000000;
+    opacity: 1;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.forgot-password {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: center;
+    color: #353434;
+    text-decoration: none;
+    width: 184px;
+    height: 23px;
+    margin-right: 50px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+.login-button {
+    margin-top: 25px;
+    width: 375px;
+    height: 53px;
+    padding: 15px 30px;
+    gap: 10px;
+    background: #F5ECE4;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 23px;
+    transition: background-color 0.3s; /* Add transition for background-color */
+}
+
+.login-button:hover {
+    background-color: #c99f83; /* Change background color on hover */
+}
+.reg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.create-account-text{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #70342B;
+  box-shadow: 0 0 5px #70342B;
+}
+
+.input-field::placeholder {
+  transition: transform 0.3s ease;
+  transform: translateY(0);
+}
+
+.input-field:focus::placeholder {
+  transform: translateY(-10px);
+  font-size: 10px;
+  color: #70342B;
+  font-weight: bold;
+}
+
+
+.create-account-content{
+    padding-top: 50px;
+    font: 15px sans-serif;
+}
+.reg-left-col {
+    flex: 1;
+    max-width: 75%;
+    background-image: url("../jnjwebapp/assets/client/bg_register.png");
+    height: 100%; 
+    background-size: cover;
+    background-position:center;
+
+}
+
+.notification-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.notification-dismiss {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.reg-left-col img {
+    display: none; /* Hide any img tag within reg-left-col */
+}
+
+.reg-right-col {
+    flex: 1; /* Occupy 50% of the width */
+    max-width: 400px; /* Adjust maximum width as needed */
+    padding: 50px;
+    margin-right: 20px; /* Adjust margin-right as needed */
+    background-color: #fff; /* Example background color */
+}
+
+.create-account-content, .login-account-text {
+    margin-top: 100px;
+    text-align: center; /* Center align the content */
+    margin-bottom: 5px;
+}
+
+.reg-form {
+    margin-bottom: 0px;
+}
+.reg-form input[type="text"],
+.reg-form input[type="email"],
+.reg-form input[type="password"],
+.reg-form button {
+    margin-top: 20px;
+    width: 100%; /* Adjust width and add some padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove border radius */
+    border-bottom: 1px solid #ccc; /* Add bottom border */
+    outline: none; /* Remove outline */
+    transition: all 0.3s; /* Add transition for all properties */
+}
+
+.reg-form input[type="text"]:hover,
+.reg-form input[type="email"]:hover,
+.reg-form input[type="password"]:hover,
+.reg-form button:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.reg-form input[type="text"]:focus,
+.reg-form input[type="email"]:focus,
+.reg-form input[type="password"]:focus {
+    border-bottom: 1px solid #9b7039; /* Change border color on focus */
+}
+.reg-form button {
+    width: 100%; /* Make button full width */
+    background-color: #966a32;/* Example button color */
+    color: white; /* Example text color */
+    cursor: pointer;
+}
+
+.reg-form button:hover {
+    background-color: #5c3b10; /* Example button color on hover */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  } 
+
+  
+.navigation .logo {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #353434;
+    position: absolute; /* Position the logo absolutely */
+    left: 50%; /* Move the logo to the center horizontally */
+    transform: translateX(-50%); /* Adjust the position to the left by half of its own width */
+}
+
+.navigation .nav-links {
+    display: flex;
+}
+
+.navigation .nav-links a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: #3E3A2C;
+    text-decoration: none;
+    margin-right: 20px; /* Add some spacing between links */
+}
+
+.navigation .user-actions {
+    display: flex;
+}
+
+.navigation .user-actions a {
+    color: #3E3A2C;
+    text-decoration: none;
+    margin-right: 10px; /* Add some spacing between links */
+}
